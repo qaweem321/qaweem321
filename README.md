@@ -4,6 +4,8 @@
 background jobs, UI, tests, CI and Docker. Based in Pakistan, **open to remote work**
 (full-time or contract).
 
+**BSc in Computer Science**, University of the People (2026).
+
 Happy to start with a (paid) trial task, so you can judge my work on a real problem from your
 codebase.
 
