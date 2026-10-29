@@ -13,6 +13,8 @@ codebase.
 
 | Project | What it is | Stack |
 | --- | --- | --- |
+| [PayLedger](https://github.com/qaweem321/payledger) | Payments and wallet API: double-entry ledger, idempotent payments, row locks against race conditions, live currency conversion, signed webhooks | C#, ASP.NET Core, EF Core, SQL Server, Docker |
+| [OrderFlow](https://github.com/qaweem321/orderflow) | Microservices shop: Catalog and Ordering services agree on stock through RabbitMQ events (outbox/inbox), YARP gateway with JWT sign-in, Angular front end | C#, .NET, SQL Server, RabbitMQ, Angular |
 | [Postbag](https://github.com/qaweem321/postbag) | Self-hosted newsletter platform with a WordPress plugin: double opt-in, queued campaigns that never email anyone twice, open/click tracking, REST API | PHP 8.4, Laravel 13, MySQL, WordPress |
 | [Pulseboard](https://github.com/qaweem321/pulseboard) | Uptime monitoring and public status pages with SSO | Next.js, Redux Toolkit, Keycloak, Postgres, D3 |
 | [Hookrelay](https://github.com/qaweem321/hookrelay) | Webhook gateway: verifies signatures, stores events, retries deliveries with backoff | Node.js, Express, MongoDB, React |
@@ -29,8 +31,8 @@ explaining the trade-offs.
 
 ## Tech
 
-**Languages:** TypeScript, JavaScript, PHP, Python, SQL
-**Frontend:** React, Next.js, Tailwind CSS, Redux Toolkit, TanStack Query
-**Backend:** Node.js, Express, Laravel, FastAPI, REST APIs, queues and background jobs
-**Data:** PostgreSQL, MySQL, MongoDB, pgvector, Drizzle, Eloquent, Mongoose
-**Tooling:** Docker, GitHub Actions, n8n, Vitest, Jest, Pest, PHPUnit, pytest, WordPress plugins
+**Languages:** C#, TypeScript, JavaScript, PHP, Python, SQL
+**Frontend:** React, Next.js, Angular, Tailwind CSS, Redux Toolkit, TanStack Query
+**Backend:** ASP.NET Core, Node.js, Express, Laravel, FastAPI, REST APIs, microservices, RabbitMQ, queues and background jobs
+**Data:** SQL Server, PostgreSQL, MySQL, MongoDB, pgvector, Entity Framework Core, Drizzle, Eloquent, Mongoose
+**Tooling:** Docker, GitHub Actions, n8n, xUnit, Testcontainers, Vitest, Jest, Pest, PHPUnit, pytest, WordPress plugins
