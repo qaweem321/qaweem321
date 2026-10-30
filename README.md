@@ -14,6 +14,7 @@ codebase.
 | Project | What it is | Stack |
 | --- | --- | --- |
 | [Deskpilot](https://github.com/qaweem321/deskpilot) | AI assistant that acts inside a support desk: multi-agent routing, tool calling with role-based permissions and "Are you sure?" confirmations, cited answers from a Qdrant knowledge base, guardrails, local voice, eval suite | Python, LangGraph, LangChain, FastAPI, Qdrant, Next.js, llama.cpp |
+| [routelab](https://github.com/qaweem321/routelab) | Fine-tuned a small LLM with LoRA on a laptop CPU to route requests to the right agent and tool: 95.6% exact on unseen phrasings vs 52% for prompting, compared with classic-ML baselines; powers Deskpilot's router | Python, PyTorch, Hugging Face Transformers, PEFT, scikit-learn |
 | [PayLedger](https://github.com/qaweem321/payledger) | Payments and wallet API: double-entry ledger, idempotent payments, row locks against race conditions, live currency conversion, signed webhooks | C#, ASP.NET Core, EF Core, SQL Server, Docker |
 | [OrderFlow](https://github.com/qaweem321/orderflow) | Microservices shop: Catalog and Ordering services agree on stock through RabbitMQ events (outbox/inbox), YARP gateway with JWT sign-in, Angular front end | C#, .NET, SQL Server, RabbitMQ, Angular |
 | [Postbag](https://github.com/qaweem321/postbag) | Self-hosted newsletter platform with a WordPress plugin: double opt-in, queued campaigns that never email anyone twice, open/click tracking, REST API | PHP 8.4, Laravel 13, MySQL, WordPress |
@@ -33,7 +34,7 @@ explaining the trade-offs.
 ## Tech
 
 **Languages:** C#, TypeScript, JavaScript, PHP, Python, SQL
-**AI:** LLM agents (LangGraph, LangChain), function calling, RAG (Qdrant, pgvector), prompt engineering, guardrails, evals, local LLMs (llama.cpp), speech (Whisper, Piper)
+**AI:** LLM agents (LangGraph, LangChain), function calling, RAG (Qdrant, pgvector), prompt engineering, fine-tuning (LoRA/QLoRA, PyTorch, Hugging Face), guardrails, evals, local LLMs (llama.cpp), speech (Whisper, Piper)
 **Frontend:** React, Next.js, Angular, Tailwind CSS, Redux Toolkit, TanStack Query
 **Backend:** ASP.NET Core, Node.js, Express, Laravel, FastAPI, REST APIs, microservices, RabbitMQ, queues and background jobs
 **Data:** SQL Server, PostgreSQL, MySQL, MongoDB, pgvector, Entity Framework Core, Drizzle, Eloquent, Mongoose
